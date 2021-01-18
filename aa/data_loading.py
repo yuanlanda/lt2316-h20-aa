@@ -277,6 +277,7 @@ class DataLoader(DataLoaderBase):
     # Should plot a histogram displaying the distribution of number of NERs in sentences
     # e.g. how many sentences has 1 ner, 2 ner and so on
         print('Distribution of number of NERs in sentences')
+        
         counter_dict= {}
         sentence_ids = list(self.data_df["sentence_id"].unique())
         for sentence_id in sentence_ids:
@@ -299,6 +300,7 @@ class DataLoader(DataLoaderBase):
         # FOR BONUS PART!!
         # Should plot a histogram displaying the distribution of sample lengths in number tokens
         print('Distribution of sample lengths in number tokens')
+        
         counter_dict= {}
         sentence_ids = list(self.data_df["sentence_id"].unique())
         for sentence in sentence_ids:
